@@ -585,7 +585,7 @@ function updateOUTStateDisplay(value) {
             });
 
             
-        fetch('data/last.json')
+        fetch('/data/last.json')
             .then(response => response.json())
             .then(data => {
                 let openInfoWindow = null;
@@ -633,7 +633,7 @@ markers.push(marker);
          '<p id="popup">' + "Average Book Cost: $" + feature.properties.book_supply_cost + '</p>' + '<br />' +
          '<p id="popup">' + "In State Tuition: $" + feature.properties.in_state_tuition + '</p>' +
          '<p id="popup">' + "Out of State Tuition: $" + feature.properties.out_of_state_tuition + '</p>' + '<br />' +
-         '<a id="page-link" href="http://' + url_extracted + '" target="_blank">' + "View University Page" + '</a>' +
+         '<a id="page-link" href="https://' + url_extracted + '" target="_blank">' + "View University Page" + '</a>' +
          '<p id="popup">' + "URL: " + feature.properties.school_url + '</p>'
 
                     });
