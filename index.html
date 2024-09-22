@@ -585,7 +585,7 @@ function updateOUTStateDisplay(value) {
             });
 
             
-        fetch('/root/data/last.json')
+        fetch('data/last.json')
             .then(response => response.json())
             .then(data => {
                 let openInfoWindow = null;
