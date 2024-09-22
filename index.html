@@ -609,7 +609,7 @@ function updateOUTStateDisplay(value) {
                     }
 
                     const schoolName = feature.properties.NAME; // Extract school name
-const marker = new google.maps.Marker({
+const marker = new google.maps.AdvancedMarkerElement({
     position: latLng,
     map: map,
     title: `${schoolName}, ${city}, ${state}`,
